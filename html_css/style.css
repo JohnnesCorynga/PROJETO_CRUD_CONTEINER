@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+
+}
+body{
+    color: #FFF;
+    background-image: url(img/fundoAzul.png);
+    padding-top: 5vh;
+}
+.navbar{
+    margin-top:-35px;
+}
+.tableConteiner{
+    background-color: rgb(3, 62, 87);
+    padding: 10px;
+    border: solid 1px black;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.52);
+    max-width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    align-items: center;
+    animation: flipConteiner 2s;
+}
+a{
+    text-decoration:none;
+}
+.btn{
+    color: white;
+    margin-bottom: 5px;
+}
+/******FORMULÀRIO**********/
+
+.formulario{
+    font-family: sans-serif;
+    color: white;
+    min-height: 70vh;
+    max-width: 420px ;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(3, 62, 87);
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.461);
+    animation: flipConteiner 2s;
+}
+label{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    
+}
+input[type="radio"] {/*alinhar os valores com os input radio*/
+    margin-left: 2px;
+    margin-top: -1px;
+    vertical-align: middle;
+    width: 20px;;
+    height: 20px;
+}
+input{
+    color: rgb(242, 214, 157);
+    border: 0px;
+    border-bottom: 1px black;
+    font-size: 20px;
+    background-color: rgb(3, 62, 87);
+    }
+
+input:focus {
+    outline: none !important;
+    border-bottom: solid 1.8px #ff8c00;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.field-radiobox>label{
+    margin: 2px;
+}
+.divRadios{
+    margin: 15px;
+    text-align: left;
+}
+hr{
+    width: 40vh;
+    height: 3px;
+    animation: flipHr linear infinite 35s ;
+    color:#ff8c00;
+    box-shadow: 0 0 8px #ff8c00;
+       
+}
+@keyframes flipConteiner {
+    from{
+        transform: rotateY(90deg);
+    }to{
+        transform: rotateY(10deg);
+    }
+}
+@keyframes flipHr {
+    0%{
+        background-color: #ff8c00;
+        transform: rotateY(90deg);
+    }100%{
+        background-color: #ff8c00;
+        transform: rotateY(1890deg);
+    }
+}
+
+.move{
+    margin: auto;
+    margin: 30px;
+}
+.tableConteinerMoves{
+    background-color: rgb(3, 62, 87);
+    padding: 10px;
+    border: solid 1px black;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.52);
+    max-width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    animation: flipConteiner 2s;
+    
+}
+.tableConteinerMoves>table{
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.hidden{
+    display: none;
+}
+.divAvo{
+    align-items: center;
+}
+.divPai{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
