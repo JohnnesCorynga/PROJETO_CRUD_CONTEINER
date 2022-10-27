@@ -62,7 +62,14 @@
                         <table class="caption-top table-dark table table-striped table-bordered table-hover table-condensed">
                             <caption>
                                 <h3>
-                                    Nome do conteiner
+                                    <?php
+                                        $sql = "SELECT * FROM tb_conteiner WHERE id = $idMovi";
+                                        $dadosConteiner= $conn->query($sql);
+                                        if($dadosConteiner->num_rows>0){
+                                        $exibirConteiner = $dadosConteiner->fetch_assoc();
+                                        echo $exibirConteiner["n_conteiner"];
+                                        };
+                                    ?>
                                 </h3>
                             </caption>
                             
