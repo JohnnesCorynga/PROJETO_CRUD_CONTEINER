@@ -1,6 +1,12 @@
-/*Verificando click no button */
-function btnClick() {
-    document.getElementById("btnClick").disabled = true;
-    document.getElementById("btnClick").textContent = "Enviando...";
-}
-<button id="btnClick" onclick="btnClick()"></button>
+function ehPalindromo (string) {
+    var contrario=""
+    for(let i=string.length;i>0;i--){
+      contrario+=string[i]
+     
+    }
+   if(contrario==string){
+       return "sim"
+       
+    }else{
+        return "não"
+    } return contrario}

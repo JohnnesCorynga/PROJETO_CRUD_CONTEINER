@@ -48,7 +48,7 @@
         </table>
         <div class="validando"></div>
         <div class="m-5 botoes">
-            <button class="btn btn-success btn-lg" id="btnClick" onclick="btnClick" type="submit" value="Salvar">Salvar</button>
+            <button onclick="clicou()" class="btn btn-success btn-lg" type="submit" value="Salvar">Salvar</button>
             <button onclick="voltar()" class="btn btn-danger btn-lg" type="reset" value="Cancelar">Cancelar</button>
         </div>
     </form>
@@ -56,11 +56,11 @@
         function voltar() {
             window.location = "select_conteiner.php";
         }
-        
-        /*Verificando click no button disabled*/
-        function btnClick() {
-            document.getElementById("btnClick").disabled = true;
-            document.getElementById("btnClick").textContent = "Salvando...";
+        /*VERIFICANDO SE O BUTTON JÁ FOI CLICADO*/
+        function clicou(){
+             document.querySelector(".btn").this.disabled = true;
+             document.querySelector(".btn").this.value = "Salvando conteiner...";
+
         }
         
     </script>
